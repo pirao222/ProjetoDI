@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acesso - Aura Horlogerie</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header class="header">
+    <div class="logo">AURA <span>HORLOGERIE</span></div>
+    <nav class="nav">
+      <a href="index.html">Voltar para a Loja</a>
+    </nav>
+  </header>
+
+  <!-- Área do Formulário Centralizado -->
+  <main class="login-wrapper">
+    <div class="login-card">
+      <span class="login-subtitle">ÁREA EXCLUSIVA</span>
+      <h2>Acessar sua Conta</h2>
+      
+      <form id="login-form">
+        <div class="form-group">
+          <label for="name">Seu Nome</label>
+          <input type="text" id="name" placeholder="Ex: Gabriel Silva" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" placeholder="seuemail@exemplo.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Senha</label>
+          <input type="password" id="password" placeholder="••••••••" required>
+        </div>
+
+        <button type="submit" class="btn btn-submit">Entrar na Conta</button>
+      </form>
+
+      <p class="login-footer">Ainda não tem conta? <a href="#">Cadastre-se</a></p>
+    </div>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <p>&copy; 2026 Aura Horlogerie. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    // Gerencia o envio do formulário de Login
+    document.getElementById("login-form").addEventListener("submit", function(e) {
+      e.preventDefault();
+      
+      const userName = document.getElementById("name").value.trim();
+      const userEmail = document.getElementById("email").value.trim();
+
+      if (userName) {
+        // Salva os dados do usuário no navegador (localStorage)
+        localStorage.setItem("userLoggedIn", "true");
+        localStorage.setItem("userName", userName);
+        localStorage.setItem("userEmail", userEmail);
+
+        // Redireciona de volta para a página da loja
+        window.location.href = "index.html";
+      }
+    });
+  </script>
+
+</body>
+</html>

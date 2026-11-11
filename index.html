@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aura Horlogerie - Relógios de Precisão</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Cabeçalho / Navegação -->
+  <header class="header">
+    <div class="logo">AURA <span>HORLOGERIE</span></div>
+    <nav class="nav">
+      <a href="index.html" class="active">Início</a>
+      <a href="#catalogo">Catálogo</a>
+      <a href="#" class="cart-link">Carrinho (<span id="cart-count">0</span>)</a>
+      
+      <!-- Área dinâmica de Usuário / Login -->
+      <div id="user-area">
+        <a href="login.html" class="btn-login" id="login-link">Entrar</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Banner Principal -->
+  <section class="hero">
+    <div class="hero-content">
+      <p class="hero-subtitle">COLEÇÃO 2026</p>
+      <h1>O Tempo em Sua Forma Mais Pura</h1>
+      <p class="hero-description">Engenharia de precisão e design atemporal em cada ponteiro.</p>
+      <a href="#catalogo" class="btn btn-hero">Explorar Coleção</a>
+    </div>
+  </section>
+
+  <!-- Conteúdo Principal -->
+  <main class="container" id="catalogo">
+    <div class="catalog-header">
+      <h2>Nosso Catálogo</h2>
+      <p>Filtre por categoria ou pesquise pelo modelo desejado</p>
+    </div>
+
+    <section class="filter-bar">
+      <div class="search-box">
+        <input type="text" id="search-input" placeholder="Buscar por modelo ou marca...">
+      </div>
+
+      <div class="category-filters">
+        <button class="filter-btn active" data-category="todos">Todos</button>
+        <button class="filter-btn" data-category="Masculino">Masculino</button>
+        <button class="filter-btn" data-category="Feminino">Feminino</button>
+        <button class="filter-btn" data-category="Esportivo">Esportivo</button>
+        <button class="filter-btn" data-category="Luxo">Luxo</button>
+      </div>
+    </section>
+
+    <div class="product-grid" id="product-grid"></div>
+
+    <div id="no-results" class="no-results hidden">
+      <p>Nenhum relógio encontrado com os critérios selecionados.</p>
+    </div>
+  </main>
+
+  <!-- Modal do Produto -->
+  <div id="product-modal" class="modal hidden">
+    <div class="modal-content">
+      <button class="modal-close" id="modal-close">&times;</button>
+      <div class="modal-body">
+        <div class="modal-image" id="modal-image">IMG</div>
+        <div class="modal-info">
+          <span class="modal-category" id="modal-category">Categoria</span>
+          <h3 id="modal-title">Nome do Relógio</h3>
+          <p class="modal-price" id="modal-price">R$ 0,00</p>
+          <p class="modal-description" id="modal-description">Descrição detalhada do relógio.</p>
+          <button class="btn" id="modal-add-btn">Adicionar ao Carrinho</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p class="footer-logo">AURA HORLOGERIE</p>
+      <p>&copy; 2026 Aura Horlogerie. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
