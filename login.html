@@ -4,67 +4,80 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Acesso - Aura Horlogerie</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="d-flex flex-column min-vh-100">
 
-  <!-- Cabeçalho -->
-  <header class="header">
-    <div class="logo">AURA <span>HORLOGERIE</span></div>
-    <nav class="nav">
-      <a href="index.html">Voltar para a Loja</a>
-    </nav>
-  </header>
+  <nav class="navbar custom-navbar">
+    <div class="container">
+      <a class="navbar-brand logo" href="index.html">AURA <span>HORLOGERIE</span></a>
+      <a href="index.html" class="nav-link text-light">Voltar para a Loja</a>
+    </div>
+  </nav>
 
-  <!-- Área do Formulário Centralizado -->
-  <main class="login-wrapper">
+  <main class="container my-auto py-5 d-flex justify-content-center">
     <div class="login-card">
-      <span class="login-subtitle">ÁREA EXCLUSIVA</span>
-      <h2>Acessar sua Conta</h2>
+      <span class="login-subtitle" id="form-tag">ÁREA EXCLUSIVA</span>
+      <h2 id="form-title">Acessar sua Conta</h2>
       
-      <form id="login-form">
-        <div class="form-group">
-          <label for="name">Seu Nome</label>
-          <input type="text" id="name" placeholder="Ex: Gabriel Silva" required>
+      <form id="auth-form">
+        <div class="mb-3">
+          <label for="name" class="form-label fw-bold small">SEU NOME</label>
+          <input type="text" id="name" class="form-control custom-input" placeholder="Ex: Gabriel Silva" required>
         </div>
 
-        <div class="form-group">
-          <label for="email">E-mail</label>
-          <input type="email" id="email" placeholder="seuemail@exemplo.com" required>
+        <div class="mb-3">
+          <label for="email" class="form-label fw-bold small">E-MAIL</label>
+          <input type="email" id="email" class="form-control custom-input" placeholder="seuemail@exemplo.com" required>
         </div>
 
-        <div class="form-group">
-          <label for="password">Senha</label>
-          <input type="password" id="password" placeholder="••••••••" required>
+        <div class="mb-3">
+          <label for="password" class="form-label fw-bold small">SENHA</label>
+          <input type="password" id="password" class="form-control custom-input" placeholder="••••••••" required>
         </div>
 
-        <button type="submit" class="btn btn-submit">Entrar na Conta</button>
+        <button type="submit" class="btn-custom-vinho w-100 py-2 mt-2" id="submit-btn">Entrar na Conta</button>
       </form>
 
-      <p class="login-footer">Ainda não tem conta? <a href="#">Cadastre-se</a></p>
+      <p class="login-footer mt-4 mb-0">
+        <span id="toggle-text">Ainda não tem conta?</span> 
+        <a href="#" id="toggle-auth-mode">Cadastre-se</a>
+      </p>
     </div>
   </main>
 
-  <!-- Rodapé -->
-  <footer class="footer">
-    <p>&copy; 2026 Aura Horlogerie. Todos os direitos reservados.</p>
+  <footer class="footer py-3 text-center">
+    <p class="mb-0 small">&copy; 2026 Aura Horlogerie. Todos os direitos reservados.</p>
   </footer>
 
   <script>
-    // Gerencia o envio do formulário de Login
-    document.getElementById("login-form").addEventListener("submit", function(e) {
+    let isRegisterMode = false;
+    const toggleLink = document.getElementById("toggle-auth-mode");
+    const formTitle = document.getElementById("form-title");
+    const formTag = document.getElementById("form-tag");
+    const submitBtn = document.getElementById("submit-btn");
+    const toggleText = document.getElementById("toggle-text");
+
+    toggleLink.addEventListener("click", (e) => {
       e.preventDefault();
-      
+      isRegisterMode = !isRegisterMode;
+      formTitle.textContent = isRegisterMode ? "Criar Nova Conta" : "Acessar sua Conta";
+      formTag.textContent = isRegisterMode ? "NOVO MEMBRO" : "ÁREA EXCLUSIVA";
+      submitBtn.textContent = isRegisterMode ? "Cadastrar e Entrar" : "Entrar na Conta";
+      toggleText.textContent = isRegisterMode ? "Já possui uma conta?" : "Ainda não tem conta?";
+      toggleLink.textContent = isRegisterMode ? "Fazer Login" : "Cadastre-se";
+    });
+
+    document.getElementById("auth-form").addEventListener("submit", function(e) {
+      e.preventDefault();
       const userName = document.getElementById("name").value.trim();
       const userEmail = document.getElementById("email").value.trim();
 
       if (userName) {
-        // Salva os dados do usuário no navegador (localStorage)
         localStorage.setItem("userLoggedIn", "true");
         localStorage.setItem("userName", userName);
         localStorage.setItem("userEmail", userEmail);
-
-        // Redireciona de volta para a página da loja
         window.location.href = "index.html";
       }
     });
