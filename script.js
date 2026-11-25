@@ -1,4 +1,4 @@
-// Catálogo Multimarcas com Modelos Famosos e Fotos Reais
+// Catálogo Completo com 20 Relógios de Marcas Icônicas
 const products = [
   {
     id: 1,
@@ -10,7 +10,7 @@ const products = [
     isNew: false,
     isBestSeller: true,
     isPromo: false,
-    image: "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=600&q=80",
+    image: "https://i.ebayimg.com/images/g/Ly4AAeSwQdNq71zo/s-l1600.jpg",
     description: "O arquétipo do relógio de mergulho. Caixa Oyster de 41mm em aço 904L com luneta giratória unidirecional Cerachrom.",
     specs: { case: "41mm Aço Oystersteel", glass: "Safira com Lupa Ciclope", movement: "Calibre 3235 Automático", water: "30 ATM (300m)" }
   },
@@ -24,7 +24,7 @@ const products = [
     isNew: false,
     isBestSeller: true,
     isPromo: true,
-    image: "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?auto=format&fit=crop&w=600&q=80",
+    image: "https://d2j6dbq0eux0bg.cloudfront.net/images/38270005/4342895111.jpg",
     description: "Um dos cronógrafos mais icônicos do mundo, tendo participado das seis missões lunares da história.",
     specs: { case: "42mm Aço Inoxidável", glass: "Cristal de Safira", movement: "Calibre Co-Axial Master 3861", water: "5 ATM (50m)" }
   },
@@ -38,7 +38,7 @@ const products = [
     isNew: true,
     isBestSeller: false,
     isPromo: false,
-    image: "https://images.unsplash.com/photo-1547996160-81dfa63595aa?auto=format&fit=crop&w=600&q=80",
+    image: "https://a.1stdibscdn.com/patek-philippe-calatrava-18k-rose-gold-ivory-dial-automatic-men-watch-5227r-001-for-sale-picture-7/j_13103/j_250044921735318870880/WhatsApp_Image_2024_12_19_at_10_09_04_c9a252b0_master.jpg",
     description: "A essência pura do relógio clássico redondo, com caixa em ouro rosé 18k e mostrador laqueado marfim.",
     specs: { case: "39mm Ouro Rosé 18k", glass: "Safira Fundo Transparente", movement: "Calibre 26-330 S C", water: "3 ATM (30m)" }
   },
@@ -52,7 +52,7 @@ const products = [
     isNew: false,
     isBestSeller: true,
     isPromo: false,
-    image: "https://images.unsplash.com/photo-1509048191080-d2984bad6ae5?auto=format&fit=crop&w=600&q=80",
+    image: "https://www.watchvault.com.au/cdn/shop/products/Cartier_Tank_Must_XL_WSTA0040_-_2022_Watch_Vault_02_2048x.jpg?v=1665629232",
     description: "Design retangular atemporal com cabochão de espinélio sintético na coroa e pulseira em couro de bezerro.",
     specs: { case: "33.7mm x 25.5mm Aço", glass: "Cristal de Safira", movement: "Quartzo de Alta Autonomia", water: "3 ATM (30m)" }
   },
@@ -66,7 +66,7 @@ const products = [
     isNew: true,
     isBestSeller: false,
     isPromo: false,
-    image: "https://images.unsplash.com/photo-1622434641406-a158123450f9?auto=format&fit=crop&w=600&q=80",
+    image: "https://tickingway.com/wp-content/uploads/2022/12/DSC01582-scaled.jpg",
     description: "Luneta octogonal icônica com 8 parafusos hexagonais e mostrador com padrão Grande Tapisserie.",
     specs: { case: "41mm Aço Escovado", glass: "Safira Antirreflexo", movement: "Calibre 4302 Automático", water: "5 ATM (50m)" }
   },
@@ -80,7 +80,7 @@ const products = [
     isNew: false,
     isBestSeller: false,
     isPromo: true,
-    image: "https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?auto=format&fit=crop&w=600&q=80",
+    image: "https://www.tagheuer.com/on/demandware.static/-/Library-Sites-TagHeuer-Shared/default/dw1520ce2a/images/collections/carrera/date/push-carrera-chronograph-sport.jpg",
     description: "Nascido nas pistas de corrida, combina legibilidade imediata com movimento automático Calibre Heuer 02.",
     specs: { case: "42mm Aço Polido", glass: "Safira Abobadada", movement: "Calibre Heuer 02 (80h)", water: "10 ATM (100m)" }
   },
@@ -94,7 +94,7 @@ const products = [
     isNew: false,
     isBestSeller: true,
     isPromo: true,
-    image: "https://images.unsplash.com/photo-1539874754764-5a96559165b0?auto=format&fit=crop&w=600&q=80",
+    image: "https://1.bp.blogspot.com/-WW3UtovW2Wk/YSFcBo7GgBI/AAAAAAAAy3s/xyLTDcxDnBgZvdgqs-c-BlnYdysXv9QEwCLcBGAsYHQ/s1100/Tissot_PRX_Powermatic_80_001.jpg",
     description: "Caixa integrada dos anos 1970 com mostrador texturizado e reserva de marcha de até 80 horas.",
     specs: { case: "40mm Aço 316L", glass: "Safira Antirrisco", movement: "Powermatic 80 Automático", water: "10 ATM (100m)" }
   },
@@ -108,7 +108,7 @@ const products = [
     isNew: true,
     isBestSeller: false,
     isPromo: false,
-    image: "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?auto=format&fit=crop&w=600&q=80",
+    image: "https://devriesjewelers.com/wp-content/uploads/2024/05/New-Project-2.jpg",
     description: "Mostrador texturizado em tom vinho profundo inspirado na coquetelaria japonesa de Ginza.",
     specs: { case: "40.5mm Aço Inoxidável", glass: "Hardlex Abobadado", movement: "Calibre 4R35 Automático", water: "5 ATM (50m)" }
   },
@@ -122,7 +122,7 @@ const products = [
     isNew: true,
     isBestSeller: false,
     isPromo: false,
-    image: "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?auto=format&fit=crop&w=600&q=80",
+    image: "https://watchmaestro.com/wp-content/uploads/2022/04/Rolex-Lady-Datejust-28-in-Oystersteel-and-Everose-Gold-A-Rose-2-1024x1024.png",
     description: "Relógio feminino clássico em aço e ouro Everose 18k com pulseira Jubilee de cinco fileiras.",
     specs: { case: "28mm Rolesor Everose", glass: "Cristal de Safira", movement: "Calibre 2236 Automático", water: "10 ATM (100m)" }
   },
@@ -136,25 +136,177 @@ const products = [
     isNew: false,
     isBestSeller: false,
     isPromo: true,
-    image: "https://images.unsplash.com/photo-1548171915-e79a380a2a4b?auto=format&fit=crop&w=600&q=80",
+    image: "https://images.squarespace-cdn.com/content/v1/59ed5acbd7bdce7cce158518/1661741820945-YAKNUOJEV8DFZ6O7MKB1/Omega+Seamaster+Diver+300M+Co-Axial+Black+42mm+210.30.42.20.01.001+-+2020+Watch+Vault+02.jpg",
     description: "Mostrador em cerâmica polida com ondas gravadas a laser e válvula de escape de hélio.",
     specs: { case: "42mm Aço & Cerâmica", glass: "Safira Antirreflexo", movement: "Calibre Co-Axial 8800", water: "30 ATM (300m)" }
+  },
+  {
+    id: 11,
+    brand: "IWC",
+    name: "Portugieser Chronograph",
+    category: "Luxo",
+    price: 58900.00,
+    oldPrice: null,
+    isNew: true,
+    isBestSeller: false,
+    isPromo: false,
+    image: "https://watchesbysjx.com/wp-content/uploads/2020/05/IWC-Portugieser-Chronograph-3716-5-1536x1075.jpg",
+    description: "Mostrador limpo com algarismos arábicos aplicados e ponteiros feuille ultrafinos de inspiração náutica.",
+    specs: { case: "41mm Aço Inoxidável", glass: "Safira Antirreflexo", movement: "Calibre Manufatura 69355", water: "3 ATM (30m)" }
+  },
+  {
+    id: 12,
+    brand: "Breitling",
+    name: "Navitimer B01 Chronograph 43",
+    category: "Esportivo",
+    price: 54200.00,
+    oldPrice: 59800.00,
+    isNew: false,
+    isBestSeller: false,
+    isPromo: true,
+    image: "https://d2j6dbq0eux0bg.cloudfront.net/images/38270005/3931241692.jpg",
+    description: "O lendário relógio de aviação com régua de cálculo circular e movimento cronógrafo certificado COSC.",
+    specs: { case: "43mm Aço Polido", glass: "Safira Abobadada", movement: "Calibre Breitling 01 (70h)", water: "3 ATM (30m)" }
+  },
+  {
+    id: 13,
+    brand: "Jaeger-LeCoultre",
+    name: "Reverso Classic Medium",
+    category: "Luxo",
+    price: 67500.00,
+    oldPrice: null,
+    isNew: false,
+    isBestSeller: true,
+    isPromo: false,
+    image: "https://img.jaeger-lecoultre.com/fifty-fifty-standard-1/o-dpr-2/e59e0b1471067e6f1a1cc0b05c96807a952db909.jpg",
+    description: "Caixa reversível Art Déco criada em 1931 para jogadores de polo, com acabamento guilloché.",
+    specs: { case: "40.1mm x 24.4mm Aço", glass: "Cristal de Safira", movement: "Calibre 822A/2 Corda Manual", water: "3 ATM (30m)" }
+  },
+  {
+    id: 14,
+    brand: "Tudor",
+    name: "Black Bay Fifty-Eight",
+    category: "Masculino",
+    price: 25900.00,
+    oldPrice: null,
+    isNew: false,
+    isBestSeller: true,
+    isPromo: false,
+    image: "https://img.chrono24.com/images/uhren/b69z9h1p4qrt-wik52quf7qsbg6by2qp4e34v-ExtraLarge.jpg",
+    description: "Proporções vintage de 39mm com detalhes dourados no mostrador e ponteiros Snowflake.",
+    specs: { case: "39mm Aço Acetinado", glass: "Safira Abobadada", movement: "Calibre Manufatura MT5402", water: "20 ATM (200m)" }
+  },
+  {
+    id: 15,
+    brand: "Cartier",
+    name: "Ballon Bleu de Cartier 33mm",
+    category: "Feminino",
+    price: 38400.00,
+    oldPrice: null,
+    isNew: true,
+    isBestSeller: false,
+    isPromo: false,
+    image: "https://img.everywatch.com/media/2026/11/24/cartier-ballon-bleu-de-cartier-3489-100150604.webp",
+    description: "Caixa redonda abaulada como um seixo com coroa integrada protegida por arco metálico.",
+    specs: { case: "33mm Aço Polido", glass: "Cristal de Safira", movement: "Automático Calibre Cartier", water: "3 ATM (30m)" }
+  },
+  {
+    id: 16,
+    brand: "Rolex",
+    name: "Cosmograph Daytona Panda",
+    category: "Esportivo",
+    price: 189000.00,
+    oldPrice: null,
+    isNew: true,
+    isBestSeller: true,
+    isPromo: false,
+    image: "https://img.chrono24.com/images/uhren/49975201-05zr0uw6bns51yayf5khp5jl-ExtraLarge.jpg",
+    description: "O cronógrafo definitivo do automobilismo com luneta Cerachrom preta e submostradores contrastantes.",
+    specs: { case: "40mm Aço Oystersteel", glass: "Cristal de Safira", movement: "Calibre 4131 Automático", water: "10 ATM (100m)" }
+  },
+  {
+    id: 17,
+    brand: "Longines",
+    name: "DolceVita Mini Steel",
+    category: "Feminino",
+    price: 11200.00,
+    oldPrice: 12900.00,
+    isNew: false,
+    isBestSeller: false,
+    isPromo: true,
+    image: "https://tse3.mm.bing.net/th/id/OIP.syPMQNyDmHRxr978pT2H8QHaJB?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
+    description: "Elegância italiana com caixa retangular esguia, mostrador flinqué prateado e algarismos romanos.",
+    specs: { case: "20.8mm x 32mm Aço", glass: "Cristal de Safira", movement: "Quartzo Suíço L178", water: "3 ATM (30m)" }
+  },
+  {
+    id: 18,
+    brand: "TAG Heuer",
+    name: "Monaco Calibre 11",
+    category: "Esportivo",
+    price: 44800.00,
+    oldPrice: null,
+    isNew: true,
+    isBestSeller: false,
+    isPromo: false,
+    image: "https://www.q-watches.com/data/ab/artikelen/artikel-thumbs/tag_heuer_monaco_calibre_11_(2).jpeg",
+    description: "O primeiro cronógrafo automático com caixa quadrada à prova d'água, imortalizado nas pistas de Le Mans.",
+    specs: { case: "39mm Aço Escovado", glass: "Safira Chanfrada", movement: "Calibre 11 Automático", water: "10 ATM (100m)" }
+  },
+  {
+    id: 19,
+    brand: "Seiko",
+    name: "Prospex Alpinist Forest",
+    category: "Masculino",
+    price: 4690.00,
+    oldPrice: 5390.00,
+    isNew: false,
+    isBestSeller: false,
+    isPromo: true,
+    image: "https://www.ioomobile.com/assets/images/seiko-prospex-spb212j1-men-watch-01.jpg",
+    description: "Relógio de expedição com bússola interna giratória, mostrador verde esmeralda e reserva de 70 horas.",
+    specs: { case: "39.5mm Aço Inoxidável", glass: "Safira Antirreflexo", movement: "Calibre 6R35 Automático", water: "20 ATM (200m)" }
+  },
+  {
+    id: 20,
+    brand: "Omega",
+    name: "Constellation Co-Axial 29mm",
+    category: "Feminino",
+    price: 41900.00,
+    oldPrice: 46500.00,
+    isNew: false,
+    isBestSeller: true,
+    isPromo: true,
+    image: "https://www.watchswiss.com/wp-content/uploads/2022/02/Untitled-1.png",
+    description: "As famosas garras laterais e índices em diamante sobre mostrador em madrepérola natural.",
+    specs: { case: "29mm Aço & Ouro Sedna", glass: "Safira Abobadada", movement: "Calibre Co-Axial 8700", water: "5 ATM (50m)" }
   }
 ];
 
-let cart = [];
+// Persistência no localStorage
+let cart = JSON.parse(localStorage.getItem("auraCart")) || [];
 let favorites = JSON.parse(localStorage.getItem("auraFavorites")) || [];
 let discountApplied = false;
 let selectedCategory = "todos";
 let searchQuery = "";
+let sortOption = "default";
 
 const productModal = new bootstrap.Modal(document.getElementById("productModal"));
 const checkoutModal = new bootstrap.Modal(document.getElementById("checkoutModal"));
 const ordersModal = new bootstrap.Modal(document.getElementById("ordersModal"));
 const cartOffcanvas = new bootstrap.Offcanvas(document.getElementById("cartOffcanvas"));
+const auraToast = new bootstrap.Toast(document.getElementById("auraToast"), { delay: 3200 });
+
+function showToast(message) {
+  document.getElementById("auraToastBody").textContent = message;
+  auraToast.show();
+}
 
 function formatPrice(value) {
   return value.toLocaleString("pt-BR", { style: "currency", currency: "BRL" });
+}
+
+function saveCart() {
+  localStorage.setItem("auraCart", JSON.stringify(cart));
 }
 
 // =========================================================
@@ -179,7 +331,7 @@ themeToggleBtn.addEventListener("click", () => {
 });
 
 // =========================================================
-// RENDERIZAÇÃO DOS CARDS
+// RENDERIZAÇÃO DOS CARDS (Com Parcelamento em 12x)
 // =========================================================
 function createProductCard(product) {
   const col = document.createElement("div");
@@ -191,11 +343,14 @@ function createProductCard(product) {
   else if (product.isBestSeller) tagHTML = `<span class="tag-pill">Top Vendas</span>`;
 
   const isFav = favorites.includes(product.id);
+  const installment = formatPrice(product.price / 12);
 
   const priceHTML = product.oldPrice
     ? `<span class="old-price">${formatPrice(product.oldPrice)}</span>
-       <p class="product-price">${formatPrice(product.price)}</p>`
-    : `<p class="product-price">${formatPrice(product.price)}</p>`;
+       <p class="product-price">${formatPrice(product.price)}</p>
+       <span class="installment-text">ou 12x de ${installment} sem juros</span>`
+    : `<p class="product-price">${formatPrice(product.price)}</p>
+       <span class="installment-text">ou 12x de ${installment} sem juros</span>`;
 
   col.innerHTML = `
     <article class="product-card">
@@ -260,10 +415,13 @@ function renderAllSections() {
 // FAVORITOS
 // =========================================================
 function toggleFavorite(id) {
+  const prod = products.find(p => p.id === id);
   if (favorites.includes(id)) {
     favorites = favorites.filter(favId => favId !== id);
+    if (prod) showToast(`${prod.brand} ${prod.name} removido dos favoritos.`);
   } else {
     favorites.push(id);
+    if (prod) showToast(`${prod.brand} ${prod.name} adicionado aos favoritos!`);
   }
   localStorage.setItem("auraFavorites", JSON.stringify(favorites));
   updateFavoritesUI();
@@ -316,11 +474,14 @@ function openProductModal(product) {
   document.getElementById("spec-movement").textContent = product.specs.movement;
   document.getElementById("spec-water").textContent = product.specs.water;
 
+  const installment = formatPrice(product.price / 12);
   const priceBox = document.getElementById("modal-price-box");
   priceBox.innerHTML = product.oldPrice
     ? `<span class="old-price">${formatPrice(product.oldPrice)}</span>
-       <strong class="fs-4">${formatPrice(product.price)}</strong>`
-    : `<strong class="fs-4">${formatPrice(product.price)}</strong>`;
+       <strong class="fs-4 d-block">${formatPrice(product.price)}</strong>
+       <small class="opacity-75">ou 12x de ${installment} sem juros</small>`
+    : `<strong class="fs-4 d-block">${formatPrice(product.price)}</strong>
+       <small class="opacity-75">ou 12x de ${installment} sem juros</small>`;
 
   document.getElementById("modal-add-btn").onclick = () => {
     addToCart(product);
@@ -331,12 +492,25 @@ function openProductModal(product) {
 }
 
 // =========================================================
-// CARRINHO DE COMPRAS & CHECKOUT
+// CARRINHO DE COMPRAS & CHECKOUT (Exige Login)
 // =========================================================
 function addToCart(product) {
+  const isLoggedIn = localStorage.getItem("userLoggedIn") === "true";
+
+  // Se não estiver logado, salva a intenção e redireciona para o login
+  if (!isLoggedIn) {
+    localStorage.setItem("pendingCartProductId", product.id);
+    showToast("Faça login para adicionar peças ao seu carrinho.");
+    setTimeout(() => {
+      window.location.href = "login.html";
+    }, 1100);
+    return;
+  }
+
   const existing = cart.find(item => item.id === product.id);
   if (existing) existing.qty++;
   else cart.push({ ...product, qty: 1 });
+  saveCart();
   updateCartUI();
   cartOffcanvas.show();
 }
@@ -346,6 +520,7 @@ function changeQuantity(id, delta) {
   if (!item) return;
   item.qty += delta;
   if (item.qty <= 0) cart = cart.filter(i => i.id !== id);
+  saveCart();
   updateCartUI();
 }
 
@@ -427,8 +602,9 @@ document.getElementById("checkout-form").addEventListener("submit", (e) => {
   localStorage.setItem("auraOrders", JSON.stringify(orders));
 
   checkoutModal.hide();
-  alert("Pedido confirmado com sucesso! Certificado de autenticidade emitido.");
+  showToast("Pedido confirmado! Certificado de autenticidade emitido.");
   cart = [];
+  saveCart();
   discountApplied = false;
   document.getElementById("coupon-input").value = "";
   document.getElementById("coupon-feedback").innerHTML = "";
@@ -436,16 +612,17 @@ document.getElementById("checkout-form").addEventListener("submit", (e) => {
 });
 
 // =========================================================
-// BUSCA E CATÁLOGO GERAL
+// BUSCA, ORDENAÇÃO E CATÁLOGO GERAL
 // =========================================================
 const searchSection = document.getElementById("search-catalog-section");
 const toggleSearchBtn = document.getElementById("toggle-search-btn");
 const searchInput = document.getElementById("search-input");
+const sortSelect = document.getElementById("sort-select");
 const catalogGrid = document.getElementById("catalog-grid");
 const noResults = document.getElementById("no-results");
 
 function renderCatalog() {
-  const filtered = products.filter(p => {
+  let filtered = products.filter(p => {
     const matchCat = selectedCategory === "todos" || p.category === selectedCategory;
     const q = searchQuery.toLowerCase();
     const matchText = p.name.toLowerCase().includes(q) ||
@@ -453,6 +630,14 @@ function renderCatalog() {
                       p.category.toLowerCase().includes(q);
     return matchCat && matchText;
   });
+
+  if (sortOption === "price-asc") {
+    filtered.sort((a, b) => a.price - b.price);
+  } else if (sortOption === "price-desc") {
+    filtered.sort((a, b) => b.price - a.price);
+  } else if (sortOption === "name-asc") {
+    filtered.sort((a, b) => `${a.brand} ${a.name}`.localeCompare(`${b.brand} ${b.name}`));
+  }
 
   catalogGrid.innerHTML = "";
   if (filtered.length === 0) {
@@ -518,14 +703,26 @@ searchInput.addEventListener("input", (e) => {
   renderCatalog();
 });
 
+sortSelect.addEventListener("change", (e) => {
+  sortOption = e.target.value;
+  renderCatalog();
+});
+
 // =========================================================
-// FORMULÁRIO DE CONTATO
+// FORMULÁRIO DE CONTATO & NEWSLETTER
 // =========================================================
 document.getElementById("contact-form").addEventListener("submit", (e) => {
   e.preventDefault();
   const name = document.getElementById("contact-name").value.trim();
   const feedback = document.getElementById("contact-feedback");
   feedback.innerHTML = `<span class="text-vinho">Obrigado, ${name}! Sua mensagem foi enviada ao nosso Concierge. Retornaremos em breve.</span>`;
+  showToast("Mensagem enviada ao Concierge com sucesso!");
+  e.target.reset();
+});
+
+document.getElementById("newsletter-form").addEventListener("submit", (e) => {
+  e.preventDefault();
+  showToast("Inscrição confirmada no Clube Privado Aura Horlogerie!");
   e.target.reset();
 });
 
@@ -578,7 +775,7 @@ function updateWatchExplosion() {
 window.addEventListener("scroll", updateWatchExplosion, { passive: true });
 
 // =========================================================
-// AUTENTICAÇÃO, HISTÓRICO DE PEDIDOS & NEWSLETTER
+// AUTENTICAÇÃO & HISTÓRICO DE PEDIDOS
 // =========================================================
 function openOrdersModal() {
   const orders = JSON.parse(localStorage.getItem("auraOrders")) || [];
@@ -623,15 +820,22 @@ function checkUserLogin() {
   }
 }
 
-document.getElementById("newsletter-form").addEventListener("submit", (e) => {
-  e.preventDefault();
-  alert("Inscrição confirmada no Clube Privado Aura Horlogerie!");
-  e.target.reset();
-});
-
-// Inicialização
+// Inicialização Geral
 initTheme();
 checkUserLogin();
 renderAllSections();
+updateCartUI();
 updateFavoritesUI();
 updateWatchExplosion();
+
+// Se o usuário acabou de logar após clicar em "Adicionar ao Carrinho"
+if (localStorage.getItem("userLoggedIn") === "true") {
+  const pendingId = localStorage.getItem("pendingCartProductId");
+  if (pendingId) {
+    localStorage.removeItem("pendingCartProductId");
+    const pendingProduct = products.find(p => p.id === Number(pendingId));
+    if (pendingProduct) {
+      addToCart(pendingProduct);
+    }
+  }
+}

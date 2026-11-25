@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aura Horlogerie - Boutique Multimarcas de Alta Relojoaria</title>
+  <!-- Favicon SVG Personalizado -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23000000'/%3E%3Ccircle cx='32' cy='32' r='22' fill='none' stroke='%236B0F1A' stroke-width='4'/%3E%3Cline x1='32' y1='32' x2='32' y2='18' stroke='%23FFFDF2' stroke-width='3' stroke-linecap='round'/%3E%3Cline x1='32' y1='32' x2='42' y2='32' stroke='%23FFFDF2' stroke-width='3' stroke-linecap='round'/%3E%3Ccircle cx='32' cy='32' r='2.5' fill='%236B0F1A'/%3E%3C/svg%3E">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -71,16 +73,28 @@
     <div class="container">
       <div class="d-flex justify-content-between align-items-end border-bottom pb-3 mb-4">
         <div>
-          <span class="section-tag">ACERVO MULTIMARCAS</span>
+          <span class="section-tag">ACERVO COMPLETO (20 PEÇAS)</span>
           <h2 class="mb-0 fw-bold">Catálogo Geral & Busca</h2>
         </div>
         <button id="close-search-btn" class="btn-close-catalog">Fechar Busca &times;</button>
       </div>
 
       <div class="mb-4">
-        <input type="text" id="search-input" class="form-control custom-input mb-3" placeholder="Pesquise por marca (Rolex, Omega, Cartier...) ou modelo...">
+        <div class="row g-2 mb-3">
+          <div class="col-md-8">
+            <input type="text" id="search-input" class="form-control custom-input" placeholder="Pesquise por marca (Rolex, Omega, Cartier, IWC, Breitling...) ou modelo...">
+          </div>
+          <div class="col-md-4">
+            <select id="sort-select" class="form-select custom-input" aria-label="Ordenar resultados">
+              <option value="default">Ordenar por: Destaques</option>
+              <option value="price-asc">Menor Preço</option>
+              <option value="price-desc">Maior Preço</option>
+              <option value="name-asc">Ordem Alfabética (A–Z)</option>
+            </select>
+          </div>
+        </div>
         
-        <div class="d-flex flex-wrap gap-2 mb-2">
+        <div class="d-flex flex-wrap gap-2">
           <button class="filter-btn active" data-category="todos">Todas Categorias</button>
           <button class="filter-btn" data-category="Masculino">Masculino</button>
           <button class="filter-btn" data-category="Feminino">Feminino</button>
@@ -221,6 +235,10 @@
         <button class="brand-item" data-brand="Cartier">CARTIER</button>
         <button class="brand-item" data-brand="TAG Heuer">TAG HEUER</button>
         <button class="brand-item" data-brand="Audemars Piguet">AUDEMARS PIGUET</button>
+        <button class="brand-item" data-brand="IWC">IWC</button>
+        <button class="brand-item" data-brand="Breitling">BREITLING</button>
+        <button class="brand-item" data-brand="Jaeger-LeCoultre">JAEGER-LECOULTRE</button>
+        <button class="brand-item" data-brand="Tudor">TUDOR</button>
         <button class="brand-item" data-brand="Tissot">TISSOT</button>
         <button class="brand-item" data-brand="Seiko">SEIKO</button>
       </div>
@@ -237,7 +255,6 @@
       </div>
 
       <div class="carousel-inner">
-        <!-- Slide 1 -->
         <div class="carousel-item active">
           <div class="row g-0 align-items-center carousel-slide-box">
             <div class="col-md-6">
@@ -252,7 +269,6 @@
           </div>
         </div>
 
-        <!-- Slide 2 -->
         <div class="carousel-item">
           <div class="row g-0 align-items-center carousel-slide-box">
             <div class="col-md-6">
@@ -267,7 +283,6 @@
           </div>
         </div>
 
-        <!-- Slide 3 -->
         <div class="carousel-item">
           <div class="row g-0 align-items-center carousel-slide-box">
             <div class="col-md-6">
@@ -295,7 +310,7 @@
   <!-- Vitrines Principais -->
   <main class="container my-5">
 
-    <!-- 1. Lançamentos (Cartões de Produto) -->
+    <!-- 1. Lançamentos -->
     <section id="lancamentos" class="mb-5 pt-3">
       <div class="section-header mb-4">
         <span class="section-tag">NOVIDADES 2026</span>
@@ -304,7 +319,7 @@
       <div class="row g-4" id="lancamentos-grid"></div>
     </section>
 
-    <!-- 2. Cartões Explicativos (Por que comprar na Aura Horlogerie) -->
+    <!-- 2. Cartões Explicativos -->
     <section class="mb-5 pt-4">
       <div class="section-header mb-4">
         <span class="section-tag">EXCELÊNCIA & SEGURANÇA</span>
@@ -346,7 +361,7 @@
           <div class="cat-card h-100" data-filter="Luxo">
             <div>
               <h3>Alta Relojoaria</h3>
-              <p>Patek Philippe, Rolex & Audemars Piguet</p>
+              <p>Patek Philippe, Jaeger-LeCoultre & Audemars Piguet</p>
             </div>
             <span>Explorar &rarr;</span>
           </div>
@@ -355,7 +370,7 @@
           <div class="cat-card h-100" data-filter="Masculino">
             <div>
               <h3>Clássicos</h3>
-              <p>Omega Seamaster, Tissot & Seiko Presage</p>
+              <p>Rolex, Tudor, IWC & Seiko Presage</p>
             </div>
             <span>Explorar &rarr;</span>
           </div>
@@ -364,7 +379,7 @@
           <div class="cat-card h-100" data-filter="Feminino">
             <div>
               <h3>Ícones Femininos</h3>
-              <p>Cartier Tank, Ballon Bleu & Lady-Datejust</p>
+              <p>Cartier Tank, Ballon Bleu, Longines & Rolex</p>
             </div>
             <span>Explorar &rarr;</span>
           </div>
@@ -373,7 +388,7 @@
           <div class="cat-card h-100" data-filter="Esportivo">
             <div>
               <h3>Cronógrafos</h3>
-              <p>TAG Heuer Carrera & Omega Speedmaster</p>
+              <p>Breitling Navitimer, TAG Heuer & Omega</p>
             </div>
             <span>Explorar &rarr;</span>
           </div>
@@ -607,13 +622,26 @@
     </div>
   </div>
 
+  <!-- TOAST DE NOTIFICAÇÃO ELEGANTE -->
+  <div class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index: 1090;">
+    <div id="auraToast" class="toast custom-toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header custom-toast-header">
+        <strong class="me-auto">AURA HORLOGERIE</strong>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast"></button>
+      </div>
+      <div class="toast-body" id="auraToastBody">
+        Ação concluída com sucesso.
+      </div>
+    </div>
+  </div>
+
   <!-- RODAPÉ COMPLETO E INSTITUCIONAL -->
   <footer class="footer pt-5 pb-4 mt-auto">
     <div class="container">
       <div class="row g-4 text-start pb-4 border-bottom border-secondary">
         <div class="col-md-4">
           <p class="footer-logo fs-5 mb-2">AURA <span>HORLOGERIE</span></p>
-          <p class="small text-light opacity-75">Boutique multimarcas especializada na curadoria de relógios originais Rolex, Omega, Patek Philippe, Cartier, TAG Heuer e Seiko.</p>
+          <p class="small text-light opacity-75">Boutique multimarcas especializada na curadoria de relógios originais Rolex, Omega, Patek Philippe, Cartier, Audemars Piguet, IWC, Breitling e Seiko.</p>
         </div>
         <div class="col-md-2">
           <h6 class="fw-bold text-uppercase small mb-3">Marcas</h6>
@@ -621,7 +649,7 @@
             <li><a href="#" class="footer-brand-link" data-brand="Rolex">Rolex</a></li>
             <li><a href="#" class="footer-brand-link" data-brand="Omega">Omega</a></li>
             <li><a href="#" class="footer-brand-link" data-brand="Cartier">Cartier</a></li>
-            <li><a href="#" class="footer-brand-link" data-brand="TAG Heuer">TAG Heuer</a></li>
+            <li><a href="#" class="footer-brand-link" data-brand="IWC">IWC Schaffhausen</a></li>
           </ul>
         </div>
         <div class="col-md-3">

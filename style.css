@@ -398,7 +398,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1.5rem 2.5rem;
+  gap: 1rem 2rem;
 }
 
 .brand-item {
@@ -406,8 +406,8 @@ body {
   border: none;
   color: #FFFDF2;
   font-weight: 800;
-  font-size: 0.95rem;
-  letter-spacing: 2px;
+  font-size: 0.88rem;
+  letter-spacing: 1.8px;
   cursor: pointer;
   opacity: 0.8;
   transition: all 0.2s ease;
@@ -621,7 +621,7 @@ body {
 }
 
 .old-price {
-  font-size: 0.82rem;
+  font-size: 0.8rem;
   text-decoration: line-through;
   color: var(--text-muted);
   display: block;
@@ -630,8 +630,15 @@ body {
 .product-price {
   font-weight: 800;
   font-size: 1.15rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.15rem;
   transition: color 0.25s ease;
+}
+
+.installment-text {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  display: block;
+  margin-bottom: 1rem;
 }
 
 .product-card:hover .product-price {
@@ -681,13 +688,29 @@ body {
   cursor: not-allowed;
 }
 
-/* Offcanvas e Modais */
+/* Offcanvas, Modais e Toast */
 .custom-offcanvas,
 .custom-modal {
   background-color: var(--bg-card);
   color: var(--text-main);
   border-radius: 0;
   border: 2px solid var(--border-main);
+}
+
+.custom-toast {
+  background-color: #000000;
+  color: #FFFDF2;
+  border: 1.5px solid var(--vinho);
+  border-radius: 0;
+  box-shadow: 4px 4px 0px var(--vinho);
+}
+
+.custom-toast-header {
+  background-color: var(--vinho);
+  color: #FFFDF2;
+  border-radius: 0;
+  font-size: 0.75rem;
+  letter-spacing: 1.5px;
 }
 
 body.dark-mode .btn-close {

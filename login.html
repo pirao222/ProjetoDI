@@ -4,67 +4,207 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Acesso - Aura Horlogerie</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23000000'/%3E%3Ccircle cx='32' cy='32' r='22' fill='none' stroke='%236B0F1A' stroke-width='4'/%3E%3Cline x1='32' y1='32' x2='32' y2='18' stroke='%23FFFDF2' stroke-width='3' stroke-linecap='round'/%3E%3Cline x1='32' y1='32' x2='42' y2='32' stroke='%23FFFDF2' stroke-width='3' stroke-linecap='round'/%3E%3Ccircle cx='32' cy='32' r='2.5' fill='%236B0F1A'/%3E%3C/svg%3E">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .login-navbar {
+      background-color: #000000;
+      border-bottom: 2px solid #6B0F1A;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+
+    .login-navbar a {
+      text-decoration: none;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+    }
+
+    .back-link {
+      color: #FFFDF2;
+      font-size: 0.92rem;
+      transition: color 0.2s ease;
+    }
+
+    .back-link:hover {
+      color: #D48C94;
+    }
+
+    .login-main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem 1rem;
+      width: 100%;
+    }
+
+    .login-card {
+      width: 100%;
+      max-width: 420px;
+      padding: 2.5rem;
+    }
+
+    .form-group {
+      margin-bottom: 1.15rem;
+      text-align: left;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 1px;
+      margin-bottom: 0.4rem;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 0.7rem 0.85rem;
+      font-size: 0.95rem;
+      outline: none;
+    }
+
+    .btn-submit-login {
+      width: 100%;
+      padding: 0.8rem;
+      font-size: 0.95rem;
+      cursor: pointer;
+      margin-top: 0.5rem;
+    }
+
+    .login-footer-text {
+      text-align: center;
+      font-size: 0.85rem;
+      margin-top: 1.5rem;
+    }
+
+    .login-page-footer {
+      background-color: #000000;
+      color: #FFFDF2;
+      border-top: 2px solid #6B0F1A;
+      text-align: center;
+      padding: 1.2rem;
+      font-size: 0.85rem;
+      width: 100%;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Cabeçalho -->
-  <header class="header">
-    <div class="logo">AURA <span>HORLOGERIE</span></div>
-    <nav class="nav">
-      <a href="index.html">Voltar para a Loja</a>
-    </nav>
+  <!-- Barra Superior -->
+  <header class="login-navbar">
+    <a class="logo" href="index.html">AURA <span>HORLOGERIE</span></a>
+    <div class="nav-actions">
+      <button id="theme-toggle-login" class="icon-circle-btn" title="Alternar Tema">
+        <span id="theme-icon-login">☾</span>
+      </button>
+      <a href="index.html" class="back-link">Voltar para a Loja</a>
+    </div>
   </header>
 
-  <!-- Área do Formulário Centralizado -->
-  <main class="login-wrapper">
+  <!-- Cartão Centralizado -->
+  <main class="login-main">
     <div class="login-card">
-      <span class="login-subtitle">ÁREA EXCLUSIVA</span>
-      <h2>Acessar sua Conta</h2>
+      <span class="login-subtitle" id="form-tag">ÁREA EXCLUSIVA</span>
+      <h2 id="form-title">Acessar sua Conta</h2>
       
-      <form id="login-form">
+      <form id="auth-form">
         <div class="form-group">
-          <label for="name">Seu Nome</label>
-          <input type="text" id="name" placeholder="Ex: Gabriel Silva" required>
+          <label for="name">SEU NOME</label>
+          <input type="text" id="name" class="custom-input" placeholder="Ex: Gabriel Silva" required>
         </div>
 
         <div class="form-group">
-          <label for="email">E-mail</label>
-          <input type="email" id="email" placeholder="seuemail@exemplo.com" required>
+          <label for="email">E-MAIL</label>
+          <input type="email" id="email" class="custom-input" placeholder="seuemail@exemplo.com" required>
         </div>
 
         <div class="form-group">
-          <label for="password">Senha</label>
-          <input type="password" id="password" placeholder="••••••••" required>
+          <label for="password">SENHA</label>
+          <input type="password" id="password" class="custom-input" placeholder="••••••••" required>
         </div>
 
-        <button type="submit" class="btn btn-submit">Entrar na Conta</button>
+        <button type="submit" class="btn-custom-vinho btn-submit-login" id="submit-btn">Entrar na Conta</button>
       </form>
 
-      <p class="login-footer">Ainda não tem conta? <a href="#">Cadastre-se</a></p>
+      <p class="login-footer-text">
+        <span id="toggle-text">Ainda não tem conta?</span> 
+        <a href="#" id="toggle-auth-mode" style="color: var(--vinho-light); font-weight: bold; text-decoration: none;">Cadastre-se</a>
+      </p>
     </div>
   </main>
 
   <!-- Rodapé -->
-  <footer class="footer">
-    <p>&copy; 2026 Aura Horlogerie. Todos os direitos reservados.</p>
+  <footer class="login-page-footer">
+    &copy; 2026 Aura Horlogerie. Todos os direitos reservados.
   </footer>
 
   <script>
-    // Gerencia o envio do formulário de Login
-    document.getElementById("login-form").addEventListener("submit", function(e) {
+    // Sincronização do Modo Escuro/Claro com a loja
+    const themeBtn = document.getElementById("theme-toggle-login");
+    const themeIcon = document.getElementById("theme-icon-login");
+
+    if (localStorage.getItem("auraTheme") === "dark") {
+      document.body.classList.add("dark-mode");
+      themeIcon.textContent = "☀";
+    }
+
+    themeBtn.addEventListener("click", () => {
+      document.body.classList.toggle("dark-mode");
+      const isDark = document.body.classList.contains("dark-mode");
+      themeIcon.textContent = isDark ? "☀" : "☾";
+      localStorage.setItem("auraTheme", isDark ? "dark" : "light");
+    });
+
+    // Alternância Login / Cadastro
+    let isRegisterMode = false;
+    const toggleLink = document.getElementById("toggle-auth-mode");
+    const formTitle = document.getElementById("form-title");
+    const formTag = document.getElementById("form-tag");
+    const submitBtn = document.getElementById("submit-btn");
+    const toggleText = document.getElementById("toggle-text");
+
+    toggleLink.addEventListener("click", (e) => {
       e.preventDefault();
-      
+      isRegisterMode = !isRegisterMode;
+      formTitle.textContent = isRegisterMode ? "Criar Nova Conta" : "Acessar sua Conta";
+      formTag.textContent = isRegisterMode ? "NOVO MEMBRO" : "ÁREA EXCLUSIVA";
+      submitBtn.textContent = isRegisterMode ? "Cadastrar e Entrar" : "Entrar na Conta";
+      toggleText.textContent = isRegisterMode ? "Já possui uma conta?" : "Ainda não tem conta?";
+      toggleLink.textContent = isRegisterMode ? "Fazer Login" : "Cadastre-se";
+    });
+
+    document.getElementById("auth-form").addEventListener("submit", function(e) {
+      e.preventDefault();
       const userName = document.getElementById("name").value.trim();
       const userEmail = document.getElementById("email").value.trim();
 
       if (userName) {
-        // Salva os dados do usuário no navegador (localStorage)
         localStorage.setItem("userLoggedIn", "true");
         localStorage.setItem("userName", userName);
         localStorage.setItem("userEmail", userEmail);
-
-        // Redireciona de volta para a página da loja
         window.location.href = "index.html";
       }
     });
